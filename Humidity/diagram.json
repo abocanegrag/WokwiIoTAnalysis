@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "author": "Anthony Bocanegra",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 29.4, "left": -29.4, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -105.3, "left": 138.6, "attrs": {} }
+  ],
+  "connections": [
+    [ "uno:6", "dht1:SDA", "green", [ "v0" ] ],
+    [ "dht1:VCC", "uno:5V", "red", [ "v0" ] ],
+    [ "uno:GND.2", "dht1:GND", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
